@@ -2,10 +2,6 @@
 // из упорядоченного списка list: number[]:
 
 export function searchNumber(list: number[], item: number): number | null {
-  if (list.length === 0 || Number.isNaN(item) || Math.abs(item) === Infinity) {
-    return null;
-  }
-
   let result: number | null = null;
   let startInd = 0;
   let endInd = list.length - 1;
